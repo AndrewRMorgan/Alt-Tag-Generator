@@ -1,0 +1,21 @@
+
+{
+  "name": "Alt Tag Generator",
+  "short_name": "Alt Tag Generator",
+  "description": "Automatic alt tag generator",
+  "version": "1.1",
+  "author": "Andy Morgan",
+  "permissions": [
+  "activeTab"
+],
+  "browser_action": {
+    "default_title": "Alt Tag Generator"
+    },
+  "content_scripts": [
+   {
+     "matches": ["http://*/*", "https://*/*"],
+     "js": ["content.js"]
+   }
+ ],
+ "manifest_version": 2
+}
